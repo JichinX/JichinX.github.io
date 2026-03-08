@@ -1,0 +1,112 @@
+baseURL: "https://jichinx.github.io/"
+languageCode: "zh-cn"
+title: "JichinX's Blog"
+theme: "PaperMod"
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+ignoreLogs: ['warning-goldmark-raw-html']
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+  env: production
+  title: "JichinX's Blog"
+  description: "Android & Backend Developer | AI Explorer"
+  keywords: [Blog, Android, Backend, Go, Python, AI]
+  author: "JichinX"
+  images: ["<link or path of image for opengraph, twitter-cards>"]
+  DateFormat: "2006-01-02"
+  defaultTheme: dark
+  disableThemeToggle: false
+
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: false
+  tocopen: false
+
+  assets:
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon.ico"
+    favicon32x32: "/favicon.ico"
+    apple_touch_icon: "/favicon.ico"
+    pwa_manifest: "/favicon.ico"
+
+  label:
+    text: "JichinX"
+    icon: /favicon.ico
+    iconHeight: 35
+
+  homeInfoParams:
+    Title: "你好，我是许继昌 👋"
+    Content: "Android 开发者 & 后端工程师<br>目前正在探索 AI 智能体开发<br><br>在这里分享技术心得、项目经验和学习笔记"
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/JichinX"
+
+  analytics:
+    google:
+      SiteVerificationTag: ""
+
+  cover:
+    hidden: false
+    hiddenInList: false
+    hiddenInSingle: false
+
+  editPost:
+    URL: "https://github.com/JichinX/JichinX.github.io/tree/main/content"
+    Text: "建议修改"
+    appendFilePath: true
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: categories
+      name: 分类
+      url: /categories/
+      weight: 10
+    - identifier: tags
+      name: 标签
+      url: /tags/
+      weight: 20
+    - identifier: archives
+      name: 归档
+      url: /archives/
+      weight: 30
+    - identifier: search
+      name: 搜索
+      url: /search/
+      weight: 40
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+pygmentsUseClasses: true
